@@ -7,7 +7,7 @@ function Login (){
             <div className="basis-3/4">
                 <h2 className="m-10 font-bold text-2xl">Cookweb</h2>
                 <div className="">
-                    <div className="">
+                    <div className="  bg-slate-400 ">
                         <div className="translate-x-2">
 
                         <div>
