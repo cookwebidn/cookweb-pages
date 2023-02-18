@@ -1,5 +1,6 @@
 import { useState } from "react";
 import React from "react";
+
 import { Link, Routes, Route } from "react-router-dom";
 import TambahResep from "./tambahResep_page";
 import Beranda from "./beranda_page";
@@ -13,12 +14,14 @@ export default function Navbar() {
       <nav className="relative flex flex-wrap items-center justify-between px-2 py-3 ">
         <div className="container px-4 mx-auto flex flex-wrap items-center justify-between">
           <div className="w-full relative flex justify-between lg:w-auto lg:static lg:block lg:justify-start">
+
             <Link
               className="text-lg font-bold leading-relaxed inline-block mr-4 py-2 whitespace-nowrap  "
               to="/"
             >
               Cookweb
             </Link>
+
             <button
               className="cursor-pointer text-xl leading-none px-3 py-1 border border-solid border-transparent rounded bg-transparent block lg:hidden outline-none focus:outline-none"
               type="button"
@@ -32,6 +35,7 @@ export default function Navbar() {
 
             <ul className="flex flex-col lg:flex-row list-none lg:ml-auto">
                 <li className="nav-item">
+
                     <Link className="px-3 py-2 flex items-center text-md font-normal leading-snug hover:opacity-75" to="/">
                        <span className="ml-2">Beranda</span>
                      </Link>
@@ -50,6 +54,7 @@ export default function Navbar() {
                   to="/profile"
                 ><img className="w-7" src={require("../assets/profile.png")}></img>
                 </Link>
+
               </li>
             </ul>
           </div>
@@ -67,3 +72,7 @@ export default function Navbar() {
     
   );
 }
+
+        
+    
+
